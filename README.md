@@ -11,11 +11,23 @@ How to create a new GitHub repository and clone an existing repository into it. 
 3. Then type in `git clone` and paste in the link FROM THE RESPOSITORY YOU WANT TO CLONE to your new repository:  
 `git clone https://...`
 
+This creates a folder on your computer with the name of the repository you just cloned into it. 
+
 4. Next type in `git branch`. If something other than `* master` appears, type `git branch -M master`. This will set the branch of the respository to the master.
 
-5. Next type in `git remote -v` to see where Git is pushing and pulling files. It most likely is still set to the cloned repository's links.  
+5. Next type in `git remote -v` to see where Git is fetching and pushing files. It most likely is still set to the cloned repository's links.  
 
-6. Go to your GitHub repository and copy the HTTPS link under the green clone button. Type in `git remote set-url master` and paste your link in:
+6. Go to your GitHub repository and copy the HTTPS link under the green clone button. Type in `git remote set-url master` and paste your link in:  
 `git remote set-url master https://...`
 
-6. 
+7. Type in `git remote -v` and you should see that the fetch and push links are updated to your repository link:  
+`origin https://your_link... (fetch)`  
+`origin https://your_link... (push)`
+
+8. Make edits to a file, then type in `git status` and you should see that `modified:   filename.extension` is red. 
+
+9. Type `git add .`
+
+10. Type `git commit -m"Message here"`. You can change the message you want to upload to GitHub. 
+
+11. Type `git push origin master` and refresh your GitHub page. The cloned files and any updates should now be reflected in the master branch on your repository!
