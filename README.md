@@ -9,7 +9,7 @@ How to create a new GitHub repository and clone an existing repository into it. 
 `cd Git`  
 
 3. Then type in `git clone` and paste in the link FROM THE RESPOSITORY YOU WANT TO CLONE to your new repository:  
-`git clone https://...`
+`git clone https://your_link...`
 
 This creates a folder on your computer with the name of the repository you just cloned into it. 
 
